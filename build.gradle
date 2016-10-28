@@ -1,0 +1,18 @@
+apply plugin: 'application'
+
+mainClassName = 'first.TestClass'
+
+jar {
+	baseName = 'gradle-project'
+	version = '1.0'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.8'
+}
+
+/*
+task execute(type:JavaExec) {
+	main = getProperty("mainClass")
+	classpath = sourceSets.main.runtimeClasspath
+}*/
